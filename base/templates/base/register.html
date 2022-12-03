@@ -1,0 +1,36 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <h1>Registro</h1>
+</div>
+
+<div class="card-body">
+    <form method="POST">
+        {% csrf_token %}
+        <label>{{form.username.label}}</label>
+        {{form.username}}
+
+        <BR></BR>
+
+        <label>{{form.password1.label}}</label>
+        {{form.password1}}
+        <h5>Debe contener al menos 9 letras*</h5>
+
+        <BR></BR>
+
+        <label>{{form.password2.label}}</label>
+        {{form.password2}}
+
+        <BR></BR>
+
+        <input style="margin-top:10px" class="button" type="submit" value="Register">
+    </form>
+    <BR></BR>
+    <p>Ya tienes una cuenta? <a href="{% url 'login' %}">Login</a></p>
+</div>
+
+
+
+
+{% endblock content %}

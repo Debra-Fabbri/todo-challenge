@@ -1,0 +1,24 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div class="header-bar" style="flex-direction: column; ">
+    <h1>Bienvenido/a a su ToDo-List</h1>
+</div>
+
+<div class="card-body">
+    <h2>Login</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="button" type="submit" value="Login">
+    </form>
+    <BR></BR>
+    <p>¿No tienes una cuenta? <a href="{% url 'register' %}">Registrarse</a></p>
+</div>
+
+
+
+
+
+
+{% endblock content %}

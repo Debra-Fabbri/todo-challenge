@@ -35,3 +35,42 @@ El usuario de la aplicación tiene que ser capaz de:
 - El Readme debe contener todas las instrucciones para poder levantar la aplicación, en caso de ser necesario, y explicar cómo se usa.
 - Disponibilidad para realizar una pequeña demo del proyecto al finalizar el challenge.
 - Tiempo para la entrega: Aproximadamente 7 días.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Resolucion del challenge 
+
+Se solicitó crear una aplicación web sencilla que permita a los usuarios crear y mantener una lista de tareas además de autenticarse, eliminar una tarea, marcar tareas como completadas, ver una lista de todas las tareas existentes y filtrar/buscar tareas por el contenido de la misma.
+
+(Si bien no era necesario la creación de un front, lo realicé para que la experiencia del usuario sea la mas óptima)
+
+Acontinuación realicé un diagrama de flujo para esta aplicación, donde veremos cuáles son los procesos que intervienen y cómo se relacionan entre ellos:
+
+
+<img src="./ToDo_List.png"  height="300">
+
+
+Para correr esta app se deben de seguir estos pasos:
+
+1) Clonar el repositorio para tenerlo en local
+2) Abrir una terminar y correr los comandos si:
+
+    a) Usar la app desde el front
+
+            python manage.py runserver 
+
+    b) Usar la app desde el back 
+
+        #Primero crear un superusuario:
+
+            python manage.py createsuperuser
+
+        #Luego correr 
+
+            python manage.py runserver 
+
+        #En la barra de navegacion, borrar la parte del "Login" y agregar luego del 8000 (o el puerto que hayas usado): admin 
+
+             http://000.0.0.0:8000/admin/
+
