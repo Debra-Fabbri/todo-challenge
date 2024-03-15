@@ -39,38 +39,50 @@ El usuario de la aplicación tiene que ser capaz de:
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-Resolucion del challenge 
 
-Se solicitó crear una aplicación web sencilla que permita a los usuarios crear y mantener una lista de tareas además de autenticarse, eliminar una tarea, marcar tareas como completadas, ver una lista de todas las tareas existentes y filtrar/buscar tareas por el contenido de la misma.
 
-(Si bien no era necesario la creación de un front, lo realicé para que la experiencia del usuario sea la mas óptima)
+# Resolución del Challenge
 
-Acontinuación realicé un diagrama de flujo para esta aplicación, donde veremos cuáles son los procesos que intervienen y cómo se relacionan entre ellos:
+En esta versión actualizada del repositorio, he implementado una solución mejorada para el challenge. La principal mejora radica en la organización del código y la separación de la resolución antigua de la nueva mediante la creación de carpetas específicas.
 
+## Instrucciones de Uso
+
+Para obtener este repositorio, ejecute el siguiente comando dentro de su terminal habilitada para git
+```bash
+$ git clone 
+```
+
+Luego de clonarlo, puedes instalar las dependencias de Django con el siguiente comando:
+
+```bash
+$ pip install -r requirements.txt
+```
+
+
+Para explorar la nueva resolución, ejecuta el siguiente comando en tu terminal:
+```bash
+$ cd new-todo-list
+```
+
+Para comparar la versión anterior del challenge con la nueva, puedes acceder a la resolución anterior mediante el siguiente comando:
+```bash
+cd old-todo-list
+```
+
+Cada carpeta contiene su propio README con las instrucciones de uso.
+
+## Descripción del Challenge
+
+El desafío consistió en desarrollar una aplicación web sencilla que permita a los usuarios crear y gestionar una lista de tareas. Además, se requería funcionalidades como autenticación, eliminación de tareas, marcado de tareas como completadas, visualización de todas las tareas existentes y la capacidad de filtrar/buscar tareas por su contenido.
+
+Aunque no era obligatorio crear un frontend, decidí implementarlo para mejorar la experiencia del usuario.
+
+
+## Diagrama de Flujo
+
+Se ha creado un diagrama de flujo para visualizar de manera clara los procesos involucrados en la aplicación y cómo se relacionan entre sí. Este diagrama proporciona una visión general de la lógica de la aplicación y facilita la comprensión de su funcionamiento.
 
 <img src="./ToDo_List.png"  height="300">
 
 
-Para correr esta app se deben de seguir estos pasos:
-
-1) Clonar el repositorio para tenerlo en local
-2) Abrir una terminar y correr los comandos si:
-
-    a) Usar la app desde el front
-
-            python manage.py runserver 
-
-    b) Usar la app desde el back 
-
-        #Primero crear un superusuario:
-
-            python manage.py createsuperuser
-
-        #Luego correr 
-
-            python manage.py runserver 
-
-        #En la barra de navegacion, borrar la parte del "Login" y agregar luego del 8000 (o el puerto que hayas usado): admin 
-
-             http://000.0.0.0:8000/admin/
-
+¡Gracias por revisar la resolución mejorada del challenge! Si tienes alguna pregunta o sugerencia, no dudes en comunicarte.
